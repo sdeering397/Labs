@@ -1,0 +1,40 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f9fafa;
+}
+
+nav {
+    justify-content: flex-start;
+}
+
+li {
+    list-style-type: none;
+    padding: 4px;   
+}
+
+.active {
+color: #000;
+}
+
+a {
+    color: #69696a;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    justify-content: center;
+    background-color:#000;
+    color:#FFF;
+    border: 6px solid #000;
+    border-radius: 50px;
+}
+
+p {
+    border-left: 2px solid #69696a;
+    padding: 10px;
+
+}
