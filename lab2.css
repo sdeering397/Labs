@@ -1,0 +1,110 @@
+
+/*Use left, right, top, bottom with px to adjust location of circles*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f9fafa;
+}
+
+nav {
+    justify-content: flex-start;
+}
+
+li {
+    list-style-type: none;
+    padding: 4px;   
+}
+
+.active {
+color: #000;
+}
+
+a {
+    color: #69696a;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    justify-content: center;
+    background-color:#000;
+    color:#FFF;
+    border: 6px solid #000;
+    border-radius: 50px;
+}
+
+p {
+    border-left: 2px solid #69696a;
+    padding: 10px;
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .active{
+        position: fixed;
+        left: 10px;
+        top: 20px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1, p {
+        width: 50%;
+        flex-direction: column;
+    }
+    
+    nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    .button2 {
+        position: fixed;
+        width: 12%;
+        bottom: 0;
+        margin-left: 50%;
+    }
+
+    .circle {
+        border-radius: 50%;
+        position: fixed;
+    }
+    
+    .circle.c1 {
+        background-color: rgba(247, 136, 167, 0.6);
+        position: relative;
+        right: 60px;
+        top: 50px;
+        width: 125px;
+        height: 125px;
+    }
+    
+    .circle.c2 {
+        background-color: rgba(247, 193, 162, 0.7);
+        right: 25px;
+        top: 150px;
+        z-index: 2;
+        width: 90px;
+        height: 90px;
+    }
+    
+    .circle.c3 {
+        background-color: rgba(207, 130, 213, 0.6);
+        transform: translate(-15px, -80px);
+        height: 70px;
+        width: 70px;
+        right: 10px;
+        top: 190px;
+        z-index: 1;
+    }
+
+}
